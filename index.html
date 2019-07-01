@@ -44,10 +44,9 @@
         var right = out.data32F[i + 5] * frame.cols;
         var bottom = out.data32F[i + 6] * frame.rows;
         cv.rectangle(frame, {x: left, y: top}, {x: right, y: bottom}, [0, 255, 0, 255]);
-     blob.delete();
-     out.delete();
        }
-      
+     blob.delete();
+     out.delete();      
     
       
       // Visualize frame
